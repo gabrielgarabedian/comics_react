@@ -11,17 +11,17 @@ const NavBar = () => {
         <h1 className="logoEmpresa"> Multiverse </h1>
         <ul className="barraNavegacion">
             <li className="contenedorPagina">
-                <a href="./index.html" className="hrefNav">
+                <a href="../index.html" className="hrefNav">
                     Home
                 </a>
             </li>
             <li className="contenedorPagina">
-                <a href="./pages/contacto.html" className="hrefNav">
+                <a href="../pages/contacto.html" className="hrefNav">
                     Contacto
                 </a>
             </li>
             <li className="contenedorPagina"> 
-                <a href="./pages/tienda.html" className="hrefNav">
+                <a href="../pages/tienda.html" className="hrefNav">
                     Tienda
                 </a>
             </li>
