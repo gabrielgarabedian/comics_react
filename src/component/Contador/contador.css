@@ -1,0 +1,30 @@
+.itemContador {
+    width: 100%;
+    font-size: 45px;
+    color: green;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.botonera{
+    display: inline-block;
+    padding: 10px;
+}
+
+.sumar{
+    height: 40px;
+    width: 40px;
+}
+
+.restar{
+    height: 40px;
+    width: 40px;
+}
+
+.cantidad{
+    height: 40px;
+    margin-top: 5px;
+    font-size: 50px;
+}

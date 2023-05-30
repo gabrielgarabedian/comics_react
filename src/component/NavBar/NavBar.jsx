@@ -3,8 +3,6 @@ import "./navBar.css";
 import CartWidget from "../CartWidget/CartWidget";
 
 
-
-
 const NavBar = () => {
     return (
     <nav className="navBar">

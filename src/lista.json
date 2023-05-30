@@ -1,0 +1,11 @@
+[
+    {"id":1,"title":"Batman 1989","description":"Basado en la pelicula de Tim Burton", "price":4500,"stock":10, "cantidad": 1,"img":"../assets/batman.jpg","alt":"batman 1989"},
+    {"id":2,"title":"Batman Muerte en la familia","description":"tras la muerte de robin el joker ...", "price":6500,"stock":15, "cantidad": 1,"img":"../assets/batman2.jpg","alt":"batman familia"},
+    {"id":3,"title":"Crisis en Tierras Infinitas","description":"los eventos de la crisis trae caos al multiverso...", "price":2500,"stock":23, "cantidad": 1,"img":"../assets/crisi1.jpg","alt":"crisis infinita"},
+    {"id":4,"title":"Crisis Oscuras","description":"La oscuridad avanza en el universo y los heroes ...", "price":8500,"stock":12, "cantidad": 1,"img":"../assets/crisislanter.jpg","alt":"lanter oscuro"},
+    {"id":5,"title":"Daredevil","description":"El diablo vuelve a las calles...", "price":7300,"stock":5, "cantidad": 1,"img":"../assets/daredevil.jpg","alt":"daredevil"},
+    {"id":6,"title":"DCsos parte 5","description":"La materia oscura convierte en zombies al universo ...", "price":900,"stock":50, "cantidad": 1,"img":"../assets/dcsos.jpg","alt":"dcsos5"},
+    {"id":7,"title":"Spiderman: el asombroso","description":"La ultima aventura del aracnido", "price":5500,"stock":8, "cantidad": 1,"img":"../assets/spiderman.jpg","alt":"spiderman el asombroso"},
+    {"id":8,"title":"Flash Año Uno","description":"El velocista escarlata vuelve a las pistas en sus comienzos", "price":7200,"stock":19, "cantidad": 1,"img":"../assets/flash1","alt":"flash año1"},
+    {"id":9,"title":"FlashPoint","description":"Flash comete un error al viajar en el tiempo reiniciandolo...", "price":8900,"stock":15, "cantidad": 1,"img":"../assets/flaspoint.jpg","alt":"flashpoint"}
+]
