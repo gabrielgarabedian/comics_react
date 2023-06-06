@@ -1,30 +1,35 @@
-import React from 'react'
+import React from 'react';
+import lista from '../../lista.json';
 
 const DatosPrueba =() =>{
-    const datos = [
-      {id: 1, name:"Batman año uno"},
-      {id: 2, name:"Flash año uno"},
-      {id: 3, name:"Superman el reinado"},
-    ];
-  
+
     const getDatos = ()=> {
         return new Promise((resolve, reject) => {
-            if (datos.length === 0){
+            if (lista.length === 0){
                 reject (new Error("No hay datos para mostrar"))
             }
             setTimeout(()=>{
-                resolve (datos);
+                resolve (lista);
             }, 2000);
         })
     };
-    
-    getDatos()
-    .then((datos)=>  console.log(datos))
 
+    async function baseDatos (){
+        try{
+            const datosCard = await getDatos()
+            console.log(datosCard());
+        }catch (error){
+            console.log(error);
+        }
+    }
 
-    console.log(getDatos())
     
-    return <div></div>;
+    console.log(baseDatos());
+    return (
+        <>
+           
+        </>
+    )
   
   
 }

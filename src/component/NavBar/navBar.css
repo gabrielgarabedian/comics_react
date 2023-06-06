@@ -20,7 +20,8 @@
 }
 
 .contenedorPagina{
-    list-style-type: none;
+    text-decoration: none;
+    color: white;
 }
 
 .hrefNav{
@@ -29,6 +30,6 @@
     font-size: 20px;
 }
 
-.hrefNav:hover {
+.hrefli:hover {
     color: rgba(255, 251, 0, 0.918);
 }

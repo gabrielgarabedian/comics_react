@@ -3,7 +3,7 @@ import "./contador.css"
 
 const Contador = () => {
 
-    const [numero, setNumero] = useState (0);
+    const [numero, setNumero] = useState(0);
     
     const sumar = ()=>{
         if (numero < 5){
@@ -18,7 +18,7 @@ const Contador = () => {
     }
     
   return (
-    <>
+    
         <div className='itemContador'>
             <div className='botonera'>
                 <button on onClick={restar} className='restar'>-</button>
@@ -30,7 +30,7 @@ const Contador = () => {
                 <button on onClick={sumar} className='sumar'>+</button>
             </div>
         </div>
-    </>
+    
   )
 }
 

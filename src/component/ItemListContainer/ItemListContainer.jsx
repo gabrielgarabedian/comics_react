@@ -1,4 +1,6 @@
 import React from 'react';
+import ItemList from '../ItemList/ItemList';
+
 //import "./ItemListContainer.css"
 
 const estilos = {
@@ -10,8 +12,13 @@ const estilos = {
   },
 }
 
-const ItemListContainer = ({greeting}) => {
-  return <div className='itemList' style={estilos.itemList}>{greeting}</div>;
+const ItemListContainer = () => {
+  return (<>
+     <div className='itemContenedor'>
+      <ItemList />
+     </div>
+  </>
+  ) 
 };
 
 export default ItemListContainer;

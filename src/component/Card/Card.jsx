@@ -1,13 +1,34 @@
-import * as React from 'react';
+import React from "react";
+
+const Card = ({ data }) => {
+    return (
+      data.map((per, i )=>
+       
+        <div key={per.id}>
+          <h4>{per.firstName}</h4>
+          <figure>
+            <img src={per.imageUrl} alt={`imagen de ${per.firstName}`} />
+          </figure>
+        </div>
+      
+      )
+    
+
+    );
+  };
+  
+  export default Card;
+
+
+/*import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import "./Item.css"
 
-/*function MediaCard() {
+function MediaCard() {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -33,34 +54,3 @@ import "./Item.css"
 }
 
 export default MediaCard;*/
-
-const Item = ({ data }) => {
-  return (
-    data.map((per, i )=>
-    
-
-      <Card sx={{ maxWidth: 345 }} key={per.id} className='tarjeta'>
-        <CardMedia
-          sx={{ height: 400 }}
-          image={per.imageUrl}
-          title={per.firstName}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-          {per.firstName}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {per.title}
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Comprar</Button>
-          <Button size="small">Más Info</Button>
-        </CardActions>
-      </Card>
-      
-      )
-  );
-};
-
-export default Item;
