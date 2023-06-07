@@ -1,11 +1,14 @@
 import  NavBar  from './component/NavBar/NavBar';
-import ItemListContainer from './component/ItemListContainer/ItemListContainer';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import HomePage from './pages/Home/HomePage';
+import ContactoPage from './pages/Contacto/ContactoPage';
+import TiendaPage from './pages/Tienda/TiendaPage';
+import  DetailPage  from './pages/DetailPages/DetailPage';
+//import ItemListContainer from './component/ItemListContainer/ItemListContainer';
 //import lista from './lista.json';
 //import Contador from './component/Contador/Contador';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import homePage from './pages/homePage';
-import contactoPage from './pages/contactoPage';
 ///import DatosPrueba from './component/PruebaCont/PruebaCont';
+import "./App.css";
 
 
 const App = () => {
@@ -35,20 +38,17 @@ const App = () => {
   return(
     <>
     <Router> 
-    
+      <div className="App">
       <NavBar/>
-      <div className='app1'>
+      
       <Routes>
-        <Route path="/" element= {<homePage/>}/>
-        <Route path="/contactoPage" element= {<contactoPage/>}/>
-
-
+        <Route path="/" element= {<HomePage/>}/>
+        <Route path="/contacto" element= {<ContactoPage/>}/>
+        <Route path="/tienda" element= {<TiendaPage/>}/>
+        <Route path="/detail/:id" element= {<DetailPage/>}/>
       </Routes>
-    
+      </div>
         
-        <ItemListContainer greeting="Bienvenidos a la tienda de comics más importante del multiverso" />
-        </div>
-    
     </Router>
     </>
   )

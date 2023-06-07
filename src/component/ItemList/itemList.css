@@ -1,6 +1,7 @@
 .itemList{
-    background-color: darkgrey;
+    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    
 }
