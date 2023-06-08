@@ -9,6 +9,8 @@ import  DetailPage  from './pages/DetailPages/DetailPage';
 //import Contador from './component/Contador/Contador';
 ///import DatosPrueba from './component/PruebaCont/PruebaCont';
 import "./App.css";
+import Header from './component/Header/Header';
+import { Footer } from './component/Footer/footer';
 
 
 const App = () => {
@@ -39,6 +41,7 @@ const App = () => {
     <>
     <Router> 
       <div className="App">
+      <Header/>
       <NavBar/>
       
       <Routes>
@@ -47,6 +50,8 @@ const App = () => {
         <Route path="/tienda" element= {<TiendaPage/>}/>
         <Route path="/detail/:id" element= {<DetailPage/>}/>
       </Routes>
+      
+      <Footer/>
       </div>
         
     </Router>

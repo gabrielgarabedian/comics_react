@@ -14,10 +14,10 @@ const DetailPage = () => {
       },[id]);
   return (
     <div className='itemDetalle'>
-        {person && <Item data={person} />}
         <Link to="/tienda">
           <button className='boton'>Volver</button>
          </Link>
+        {person && <Item data={person} />}
     </div>
   )
 }
